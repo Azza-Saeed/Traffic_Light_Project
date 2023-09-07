@@ -1,0 +1,1762 @@
+
+Traffic_Light_Project.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000c0  00000000  00000000  000000f4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000996  2**0
+                  ALLOC, LOAD, DATA
+  2 .bss          00000001  00800060  00800060  00000996  2**0
+                  ALLOC
+  3 .comment      0000002f  00000000  00000000  00000996  2**0
+                  CONTENTS, READONLY
+  4 .stack.descriptors.hdr 0000000e  00000000  00000000  000009c5  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 000001b8  00000000  00000000  000009d3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00003440  00000000  00000000  00000b8b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000ac6  00000000  00000000  00003fcb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000fa7  00000000  00000000  00004a91  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000003b0  00000000  00000000  00005a38  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000379  00000000  00000000  00005de8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000126f  00000000  00000000  00006161  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000148  00000000  00000000  000073d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .text         00000004  00000890  00000890  00000984  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00007518  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .text.app_init 00000014  00000806  00000806  000008fa  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .progmemx.data 000000aa  000000c0  000000c0  000001b4  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 17 .text.LCD_Page 00000016  000007da  000007da  000008ce  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.delay_secs 00000042  0000070e  0000070e  00000802  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text.Green_Task 0000006a  00000658  00000658  0000074c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.Yellow_Task 0000006c  000005ec  000005ec  000006e0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.Red_Task 0000006e  0000057e  0000057e  00000672  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.Check_State 0000003a  00000750  00000750  00000844  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.app_main 00000022  000007b8  000007b8  000008ac  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .data.Break_Delay 00000001  00800061  0000089e  00000992  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 25 .bss.cur_state 00000001  00800062  00800062  00000996  2**0
+                  ALLOC
+ 26 .data.counter_red 00000001  00800063  0000089f  00000993  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 27 .data.counter_yellow 00000001  00800064  000008a0  00000994  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 28 .data.counter_green 00000001  00800065  000008a1  00000995  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 29 .text.GREEN_LED_Initializ 0000000c  0000081a  0000081a  0000090e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.GREEN_LED_ON 0000000c  00000826  00000826  0000091a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.GREEN_LED_OFF 0000000c  00000832  00000832  00000926  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.LCD_Write_Command 000000d4  00000366  00000366  0000045a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.LCD_Initialize 00000070  0000050e  0000050e  00000602  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text.LCD_Write_Character 000000d4  0000043a  0000043a  0000052e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .text.LCD_Write_String 0000002e  0000078a  0000078a  0000087e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .text.LCD_LINE_position 0000004c  000006c2  000006c2  000007b6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 37 .text.RED_LED_Initializ 0000000c  0000083e  0000083e  00000932  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 38 .text.RED_LED_ON 0000000c  0000084a  0000084a  0000093e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 39 .text.RED_LED_OFF 0000000c  00000856  00000856  0000094a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 40 .text.YELLOW_LED_Initializ 0000000c  00000862  00000862  00000956  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 41 .text.YELLOW_LED_ON 0000000c  0000086e  0000086e  00000962  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 42 .text.YELLOW_LED_OFF 0000000c  0000087a  0000087a  0000096e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 43 .text.main    0000000a  00000886  00000886  0000097a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 44 .text.DIO_SetPin_Direction 000000fe  0000016a  0000016a  0000025e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 45 .text.DIO_SetPin_Value 000000fe  00000268  00000268  0000035c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 46 .text.__dummy_fini 00000002  00000898  00000898  0000098c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 47 .text.__dummy_funcs_on_exit 00000002  0000089a  0000089a  0000098e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 48 .text.__dummy_simulator_exit 00000002  0000089c  0000089c  00000990  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 49 .text.exit    00000016  000007f0  000007f0  000008e4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 50 .text._Exit   00000004  00000894  00000894  00000988  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 36 00 	jmp	0x6c	; 0x6c <__ctors_end>
+   4:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+   8:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+   c:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  10:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  14:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  18:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  1c:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  20:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  24:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  28:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  2c:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  30:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  34:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  38:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  3c:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  40:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  44:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  48:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  4c:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+  50:	0c 94 48 04 	jmp	0x890	; 0x890 <__bad_interrupt>
+
+00000054 <.dinit>:
+  54:	00 60       	ori	r16, 0x00	; 0
+  56:	00 61       	ori	r16, 0x10	; 16
+  58:	80 00       	.word	0x0080	; ????
+  5a:	61 00       	.word	0x0061	; ????
+  5c:	62 00       	.word	0x0062	; ????
+  5e:	08 9e       	mul	r0, r24
+  60:	00 62       	ori	r16, 0x20	; 32
+  62:	00 63       	ori	r16, 0x30	; 48
+  64:	80 00       	.word	0x0080	; ????
+  66:	63 00       	.word	0x0063	; ????
+  68:	66 00       	.word	0x0066	; ????
+  6a:	08 9f       	mul	r16, r24
+
+0000006c <__ctors_end>:
+  6c:	11 24       	eor	r1, r1
+  6e:	1f be       	out	0x3f, r1	; 63
+  70:	cf e5       	ldi	r28, 0x5F	; 95
+  72:	d8 e0       	ldi	r29, 0x08	; 8
+  74:	de bf       	out	0x3e, r29	; 62
+  76:	cd bf       	out	0x3d, r28	; 61
+
+00000078 <__do_copy_data>:
+  78:	e4 e5       	ldi	r30, 0x54	; 84
+  7a:	f0 e0       	ldi	r31, 0x00	; 0
+  7c:	40 e0       	ldi	r20, 0x00	; 0
+  7e:	17 c0       	rjmp	.+46     	; 0xae <__do_clear_bss+0x8>
+  80:	b5 91       	lpm	r27, Z+
+  82:	a5 91       	lpm	r26, Z+
+  84:	35 91       	lpm	r19, Z+
+  86:	25 91       	lpm	r18, Z+
+  88:	05 91       	lpm	r16, Z+
+  8a:	07 fd       	sbrc	r16, 7
+  8c:	0c c0       	rjmp	.+24     	; 0xa6 <__do_clear_bss>
+  8e:	95 91       	lpm	r25, Z+
+  90:	85 91       	lpm	r24, Z+
+  92:	ef 01       	movw	r28, r30
+  94:	f9 2f       	mov	r31, r25
+  96:	e8 2f       	mov	r30, r24
+  98:	05 90       	lpm	r0, Z+
+  9a:	0d 92       	st	X+, r0
+  9c:	a2 17       	cp	r26, r18
+  9e:	b3 07       	cpc	r27, r19
+  a0:	d9 f7       	brne	.-10     	; 0x98 <__do_copy_data+0x20>
+  a2:	fe 01       	movw	r30, r28
+  a4:	04 c0       	rjmp	.+8      	; 0xae <__do_clear_bss+0x8>
+
+000000a6 <__do_clear_bss>:
+  a6:	1d 92       	st	X+, r1
+  a8:	a2 17       	cp	r26, r18
+  aa:	b3 07       	cpc	r27, r19
+  ac:	e1 f7       	brne	.-8      	; 0xa6 <__do_clear_bss>
+  ae:	ec 36       	cpi	r30, 0x6C	; 108
+  b0:	f4 07       	cpc	r31, r20
+  b2:	31 f7       	brne	.-52     	; 0x80 <__do_copy_data+0x8>
+  b4:	0e 94 43 04 	call	0x886	; 0x886 <main>
+  b8:	0c 94 f8 03 	jmp	0x7f0	; 0x7f0 <exit>
+
+000000bc <_exit>:
+  bc:	f8 94       	cli
+
+000000be <__stop_program>:
+  be:	ff cf       	rjmp	.-2      	; 0xbe <__stop_program>
+
+Disassembly of section .text:
+
+00000890 <__bad_interrupt>:
+ 890:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.app_init:
+
+00000806 <app_init>:
+Prev_State Prev;
+UINT8_t Break_Delay = 1;
+
+ERROR_STATE app_init(void){
+		ERROR_STATE state_error = SUCCESS;
+		LCD_Initialize();
+ 806:	0e 94 87 02 	call	0x50e	; 0x50e <LCD_Initialize>
+		RED_LED_Initializ();
+ 80a:	0e 94 1f 04 	call	0x83e	; 0x83e <RED_LED_Initializ>
+		GREEN_LED_Initializ();
+ 80e:	0e 94 0d 04 	call	0x81a	; 0x81a <GREEN_LED_Initializ>
+		YELLOW_LED_Initializ();
+ 812:	0e 94 31 04 	call	0x862	; 0x862 <YELLOW_LED_Initializ>
+		return state_error;
+}
+ 816:	81 e0       	ldi	r24, 0x01	; 1
+ 818:	08 95       	ret
+
+Disassembly of section .text.LCD_Page:
+
+000007da <LCD_Page>:
+		Check_State();
+		return state_error;
+}
+ERROR_STATE LCD_Page(void){
+	ERROR_STATE state_error = SUCCESS;
+	LCD_LINE_position(LCD_LINE1,3);
+ 7da:	63 e0       	ldi	r22, 0x03	; 3
+ 7dc:	80 e0       	ldi	r24, 0x00	; 0
+ 7de:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("Traffic Light");
+ 7e2:	60 ec       	ldi	r22, 0xC0	; 192
+ 7e4:	70 e0       	ldi	r23, 0x00	; 0
+ 7e6:	80 e0       	ldi	r24, 0x00	; 0
+ 7e8:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	return state_error;
+}
+ 7ec:	81 e0       	ldi	r24, 0x01	; 1
+ 7ee:	08 95       	ret
+
+Disassembly of section .text.delay_secs:
+
+0000070e <delay_secs>:
+
+	return state_error;
+}
+
+void delay_secs(UINT32_t delay)
+{
+ 70e:	cf 92       	push	r12
+ 710:	df 92       	push	r13
+ 712:	ef 92       	push	r14
+ 714:	ff 92       	push	r15
+ 716:	6b 01       	movw	r12, r22
+ 718:	7c 01       	movw	r14, r24
+	for (UINT16_t i = 0; i < delay; i++) {
+ 71a:	80 e0       	ldi	r24, 0x00	; 0
+ 71c:	90 e0       	ldi	r25, 0x00	; 0
+ 71e:	0b c0       	rjmp	.+22     	; 0x736 <delay_secs+0x28>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 720:	ef e9       	ldi	r30, 0x9F	; 159
+ 722:	ff e0       	ldi	r31, 0x0F	; 15
+ 724:	31 97       	sbiw	r30, 0x01	; 1
+ 726:	f1 f7       	brne	.-4      	; 0x724 <delay_secs+0x16>
+ 728:	00 c0       	rjmp	.+0      	; 0x72a <delay_secs+0x1c>
+ 72a:	00 00       	nop
+		// Each iteration of this loop introduces a delay of about 1ms using _delay_us
+		_delay_us(1000);  // Delay for 1000 microseconds (1ms)
+		if(!Break_Delay)
+ 72c:	20 91 61 00 	lds	r18, 0x0061	; 0x800061 <_end>
+ 730:	22 23       	and	r18, r18
+ 732:	49 f0       	breq	.+18     	; 0x746 <delay_secs+0x38>
+	return state_error;
+}
+
+void delay_secs(UINT32_t delay)
+{
+	for (UINT16_t i = 0; i < delay; i++) {
+ 734:	01 96       	adiw	r24, 0x01	; 1
+ 736:	ac 01       	movw	r20, r24
+ 738:	60 e0       	ldi	r22, 0x00	; 0
+ 73a:	70 e0       	ldi	r23, 0x00	; 0
+ 73c:	4c 15       	cp	r20, r12
+ 73e:	5d 05       	cpc	r21, r13
+ 740:	6e 05       	cpc	r22, r14
+ 742:	7f 05       	cpc	r23, r15
+ 744:	68 f3       	brcs	.-38     	; 0x720 <delay_secs+0x12>
+		// Each iteration of this loop introduces a delay of about 1ms using _delay_us
+		_delay_us(1000);  // Delay for 1000 microseconds (1ms)
+		if(!Break_Delay)
+		break;
+	}
+}
+ 746:	ff 90       	pop	r15
+ 748:	ef 90       	pop	r14
+ 74a:	df 90       	pop	r13
+ 74c:	cf 90       	pop	r12
+ 74e:	08 95       	ret
+
+Disassembly of section .text.Green_Task:
+
+00000658 <Green_Task>:
+	return state_error;
+}
+
+ERROR_STATE Green_Task(void){
+	ERROR_STATE state_error = SUCCESS;
+	cur_state=green;
+ 658:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <cur_state>
+	LCD_LINE_position(LCD_LINE2,2);
+ 65c:	62 e0       	ldi	r22, 0x02	; 2
+ 65e:	81 e0       	ldi	r24, 0x01	; 1
+ 660:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("remaining 10 sec   ");
+ 664:	6e ec       	ldi	r22, 0xCE	; 206
+ 666:	70 e0       	ldi	r23, 0x00	; 0
+ 668:	80 e0       	ldi	r24, 0x00	; 0
+ 66a:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	delay_secs(ONE_SEC);
+ 66e:	68 ee       	ldi	r22, 0xE8	; 232
+ 670:	73 e0       	ldi	r23, 0x03	; 3
+ 672:	80 e0       	ldi	r24, 0x00	; 0
+ 674:	90 e0       	ldi	r25, 0x00	; 0
+ 676:	0e 94 87 03 	call	0x70e	; 0x70e <delay_secs>
+    LCD_LINE_position(LCD_LINE3,2);
+ 67a:	62 e0       	ldi	r22, 0x02	; 2
+ 67c:	82 e0       	ldi	r24, 0x02	; 2
+ 67e:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("Green led is on    ");
+ 682:	62 ee       	ldi	r22, 0xE2	; 226
+ 684:	70 e0       	ldi	r23, 0x00	; 0
+ 686:	80 e0       	ldi	r24, 0x00	; 0
+ 688:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	LCD_LINE_position(LCD_LINE2,2);
+ 68c:	62 e0       	ldi	r22, 0x02	; 2
+ 68e:	81 e0       	ldi	r24, 0x01	; 1
+ 690:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("                      ");
+ 694:	66 ef       	ldi	r22, 0xF6	; 246
+ 696:	70 e0       	ldi	r23, 0x00	; 0
+ 698:	80 e0       	ldi	r24, 0x00	; 0
+ 69a:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	if(Prev==red_st)
+ 69e:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 6a2:	82 30       	cpi	r24, 0x02	; 2
+ 6a4:	11 f4       	brne	.+4      	; 0x6aa <Green_Task+0x52>
+	{
+		RED_LED_OFF();
+ 6a6:	0e 94 2b 04 	call	0x856	; 0x856 <RED_LED_OFF>
+	}
+	GREEN_LED_ON();
+ 6aa:	0e 94 13 04 	call	0x826	; 0x826 <GREEN_LED_ON>
+	Prev=green_st;
+ 6ae:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__DATA_REGION_ORIGIN__>
+	delay_secs(TEN_SEC);
+ 6b2:	68 e2       	ldi	r22, 0x28	; 40
+ 6b4:	73 e2       	ldi	r23, 0x23	; 35
+ 6b6:	80 e0       	ldi	r24, 0x00	; 0
+ 6b8:	90 e0       	ldi	r25, 0x00	; 0
+ 6ba:	0e 94 87 03 	call	0x70e	; 0x70e <delay_secs>
+	
+	return state_error;
+}
+ 6be:	81 e0       	ldi	r24, 0x01	; 1
+ 6c0:	08 95       	ret
+
+Disassembly of section .text.Yellow_Task:
+
+000005ec <Yellow_Task>:
+
+ERROR_STATE Yellow_Task(void){
+	ERROR_STATE state_error = SUCCESS;
+	cur_state=yellow;
+ 5ec:	81 e0       	ldi	r24, 0x01	; 1
+ 5ee:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <cur_state>
+	LCD_LINE_position(LCD_LINE2,2);
+ 5f2:	62 e0       	ldi	r22, 0x02	; 2
+ 5f4:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("remaining 5 sec");
+ 5f8:	6d e0       	ldi	r22, 0x0D	; 13
+ 5fa:	71 e0       	ldi	r23, 0x01	; 1
+ 5fc:	80 e0       	ldi	r24, 0x00	; 0
+ 5fe:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	delay_secs(ONE_SEC);
+ 602:	68 ee       	ldi	r22, 0xE8	; 232
+ 604:	73 e0       	ldi	r23, 0x03	; 3
+ 606:	80 e0       	ldi	r24, 0x00	; 0
+ 608:	90 e0       	ldi	r25, 0x00	; 0
+ 60a:	0e 94 87 03 	call	0x70e	; 0x70e <delay_secs>
+	LCD_LINE_position(LCD_LINE3,2);
+ 60e:	62 e0       	ldi	r22, 0x02	; 2
+ 610:	82 e0       	ldi	r24, 0x02	; 2
+ 612:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("Yellow led is on");
+ 616:	6d e1       	ldi	r22, 0x1D	; 29
+ 618:	71 e0       	ldi	r23, 0x01	; 1
+ 61a:	80 e0       	ldi	r24, 0x00	; 0
+ 61c:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	LCD_LINE_position(LCD_LINE2,2);
+ 620:	62 e0       	ldi	r22, 0x02	; 2
+ 622:	81 e0       	ldi	r24, 0x01	; 1
+ 624:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("                       ");
+ 628:	6e e2       	ldi	r22, 0x2E	; 46
+ 62a:	71 e0       	ldi	r23, 0x01	; 1
+ 62c:	80 e0       	ldi	r24, 0x00	; 0
+ 62e:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+
+	if(Prev==green_st)
+ 632:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 636:	81 11       	cpse	r24, r1
+ 638:	02 c0       	rjmp	.+4      	; 0x63e <Yellow_Task+0x52>
+	{
+		GREEN_LED_OFF();
+ 63a:	0e 94 19 04 	call	0x832	; 0x832 <GREEN_LED_OFF>
+	}
+	YELLOW_LED_ON();
+ 63e:	0e 94 37 04 	call	0x86e	; 0x86e <YELLOW_LED_ON>
+	Prev=yellow_st;
+ 642:	81 e0       	ldi	r24, 0x01	; 1
+ 644:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+	delay_secs(FIVE_SEC);
+ 648:	60 ea       	ldi	r22, 0xA0	; 160
+ 64a:	7f e0       	ldi	r23, 0x0F	; 15
+ 64c:	80 e0       	ldi	r24, 0x00	; 0
+ 64e:	90 e0       	ldi	r25, 0x00	; 0
+ 650:	0e 94 87 03 	call	0x70e	; 0x70e <delay_secs>
+	
+	return state_error;
+}
+ 654:	81 e0       	ldi	r24, 0x01	; 1
+ 656:	08 95       	ret
+
+Disassembly of section .text.Red_Task:
+
+0000057e <Red_Task>:
+ERROR_STATE Red_Task(void){
+	ERROR_STATE state_error = SUCCESS;
+	cur_state=red;
+ 57e:	82 e0       	ldi	r24, 0x02	; 2
+ 580:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <cur_state>
+	LCD_LINE_position(LCD_LINE2,2);
+ 584:	62 e0       	ldi	r22, 0x02	; 2
+ 586:	81 e0       	ldi	r24, 0x01	; 1
+ 588:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("remaining 7 sec   ");
+ 58c:	66 e4       	ldi	r22, 0x46	; 70
+ 58e:	71 e0       	ldi	r23, 0x01	; 1
+ 590:	80 e0       	ldi	r24, 0x00	; 0
+ 592:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	delay_secs(ONE_SEC);
+ 596:	68 ee       	ldi	r22, 0xE8	; 232
+ 598:	73 e0       	ldi	r23, 0x03	; 3
+ 59a:	80 e0       	ldi	r24, 0x00	; 0
+ 59c:	90 e0       	ldi	r25, 0x00	; 0
+ 59e:	0e 94 87 03 	call	0x70e	; 0x70e <delay_secs>
+	LCD_LINE_position(LCD_LINE3,2);
+ 5a2:	62 e0       	ldi	r22, 0x02	; 2
+ 5a4:	82 e0       	ldi	r24, 0x02	; 2
+ 5a6:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("Red led is on   ");
+ 5aa:	69 e5       	ldi	r22, 0x59	; 89
+ 5ac:	71 e0       	ldi	r23, 0x01	; 1
+ 5ae:	80 e0       	ldi	r24, 0x00	; 0
+ 5b0:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+	LCD_LINE_position(LCD_LINE2,2);
+ 5b4:	62 e0       	ldi	r22, 0x02	; 2
+ 5b6:	81 e0       	ldi	r24, 0x01	; 1
+ 5b8:	0e 94 61 03 	call	0x6c2	; 0x6c2 <LCD_LINE_position>
+	LCD_Write_String("                      ");
+ 5bc:	66 ef       	ldi	r22, 0xF6	; 246
+ 5be:	70 e0       	ldi	r23, 0x00	; 0
+ 5c0:	80 e0       	ldi	r24, 0x00	; 0
+ 5c2:	0e 94 c5 03 	call	0x78a	; 0x78a <LCD_Write_String>
+
+	if(Prev==yellow_st)
+ 5c6:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 5ca:	81 30       	cpi	r24, 0x01	; 1
+ 5cc:	11 f4       	brne	.+4      	; 0x5d2 <Red_Task+0x54>
+	{
+		YELLOW_LED_OFF();
+ 5ce:	0e 94 3d 04 	call	0x87a	; 0x87a <YELLOW_LED_OFF>
+	}
+	RED_LED_ON();
+ 5d2:	0e 94 25 04 	call	0x84a	; 0x84a <RED_LED_ON>
+	Prev=red_st;
+ 5d6:	82 e0       	ldi	r24, 0x02	; 2
+ 5d8:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+	delay_secs(SEV_SEC);
+ 5dc:	60 e7       	ldi	r22, 0x70	; 112
+ 5de:	77 e1       	ldi	r23, 0x17	; 23
+ 5e0:	80 e0       	ldi	r24, 0x00	; 0
+ 5e2:	90 e0       	ldi	r25, 0x00	; 0
+ 5e4:	0e 94 87 03 	call	0x70e	; 0x70e <delay_secs>
+
+	return state_error;
+}
+ 5e8:	81 e0       	ldi	r24, 0x01	; 1
+ 5ea:	08 95       	ret
+
+Disassembly of section .text.Check_State:
+
+00000750 <Check_State>:
+	LCD_LINE_position(LCD_LINE1,3);
+	LCD_Write_String("Traffic Light");
+	return state_error;
+}
+
+ERROR_STATE Check_State(void){
+ 750:	cf 93       	push	r28
+	ERROR_STATE state_error = SUCCESS;
+	if(cur_state==green)
+ 752:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <cur_state>
+ 756:	81 11       	cpse	r24, r1
+ 758:	04 c0       	rjmp	.+8      	; 0x762 <Check_State+0x12>
+	{
+		Green_Task();
+ 75a:	0e 94 2c 03 	call	0x658	; 0x658 <Green_Task>
+	LCD_Write_String("Traffic Light");
+	return state_error;
+}
+
+ERROR_STATE Check_State(void){
+	ERROR_STATE state_error = SUCCESS;
+ 75e:	c1 e0       	ldi	r28, 0x01	; 1
+ 760:	01 c0       	rjmp	.+2      	; 0x764 <Check_State+0x14>
+	if(cur_state==green)
+	{
+		Green_Task();
+	}else{
+	state_error=FAIL;		
+ 762:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if(Prev==green_st){
+ 764:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 768:	81 11       	cpse	r24, r1
+ 76a:	03 c0       	rjmp	.+6      	; 0x772 <Check_State+0x22>
+		Yellow_Task();
+ 76c:	0e 94 f6 02 	call	0x5ec	; 0x5ec <Yellow_Task>
+ 770:	01 c0       	rjmp	.+2      	; 0x774 <Check_State+0x24>
+	}else{
+	state_error=FAIL;
+ 772:	c0 e0       	ldi	r28, 0x00	; 0
+    }
+	if(Prev==yellow_st){
+ 774:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 778:	81 30       	cpi	r24, 0x01	; 1
+ 77a:	19 f4       	brne	.+6      	; 0x782 <Check_State+0x32>
+		Red_Task();
+ 77c:	0e 94 bf 02 	call	0x57e	; 0x57e <Red_Task>
+ 780:	01 c0       	rjmp	.+2      	; 0x784 <Check_State+0x34>
+	}else{
+	state_error=FAIL;
+ 782:	c0 e0       	ldi	r28, 0x00	; 0
+		//Green_Task();
+	//}else{
+		//state_error=FAIL;
+	//}
+	return state_error;
+}
+ 784:	8c 2f       	mov	r24, r28
+ 786:	cf 91       	pop	r28
+ 788:	08 95       	ret
+
+Disassembly of section .text.app_main:
+
+000007b8 <app_main>:
+		return state_error;
+}
+
+ERROR_STATE app_main(){
+		ERROR_STATE state_error = SUCCESS;
+		cur_state=green;
+ 7b8:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <cur_state>
+		counter_green=10;
+ 7bc:	8a e0       	ldi	r24, 0x0A	; 10
+ 7be:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <counter_green>
+	    counter_yellow=5;
+ 7c2:	85 e0       	ldi	r24, 0x05	; 5
+ 7c4:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <counter_yellow>
+		counter_red=7;
+ 7c8:	87 e0       	ldi	r24, 0x07	; 7
+ 7ca:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <counter_red>
+		LCD_Page();
+ 7ce:	0e 94 ed 03 	call	0x7da	; 0x7da <LCD_Page>
+		Check_State();
+ 7d2:	0e 94 a8 03 	call	0x750	; 0x750 <Check_State>
+		return state_error;
+}
+ 7d6:	81 e0       	ldi	r24, 0x01	; 1
+ 7d8:	08 95       	ret
+
+Disassembly of section .text.GREEN_LED_Initializ:
+
+0000081a <GREEN_LED_Initializ>:
+ *  Author: aliae
+ */ 
+#include "GREEN_LED_Private.h"
+
+void GREEN_LED_Initializ(void){
+	DIO_SetPin_Direction(GREEN_LED_PORT,GREEN_LED_PIN,GREEN_LED_OUTPUT);
+ 81a:	41 e0       	ldi	r20, 0x01	; 1
+ 81c:	64 e0       	ldi	r22, 0x04	; 4
+ 81e:	80 e0       	ldi	r24, 0x00	; 0
+ 820:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 824:	08 95       	ret
+
+Disassembly of section .text.GREEN_LED_ON:
+
+00000826 <GREEN_LED_ON>:
+}
+void GREEN_LED_ON(void){
+	DIO_SetPin_Value(GREEN_LED_PORT,GREEN_LED_PIN,GREEN_LED_HIGH);
+ 826:	41 e0       	ldi	r20, 0x01	; 1
+ 828:	64 e0       	ldi	r22, 0x04	; 4
+ 82a:	80 e0       	ldi	r24, 0x00	; 0
+ 82c:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 830:	08 95       	ret
+
+Disassembly of section .text.GREEN_LED_OFF:
+
+00000832 <GREEN_LED_OFF>:
+}
+void GREEN_LED_OFF(void){
+	DIO_SetPin_Value(GREEN_LED_PORT,GREEN_LED_PIN,GREEN_LED_LOW);
+ 832:	40 e0       	ldi	r20, 0x00	; 0
+ 834:	64 e0       	ldi	r22, 0x04	; 4
+ 836:	80 e0       	ldi	r24, 0x00	; 0
+ 838:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 83c:	08 95       	ret
+
+Disassembly of section .text.LCD_Write_Command:
+
+00000366 <LCD_Write_Command>:
+			digit++;
+		}
+		LCD_Write_Number(decimalp);
+	}
+return state_error;
+}
+ 366:	cf 93       	push	r28
+ 368:	c8 2f       	mov	r28, r24
+ 36a:	48 2f       	mov	r20, r24
+ 36c:	44 1f       	adc	r20, r20
+ 36e:	44 27       	eor	r20, r20
+ 370:	44 1f       	adc	r20, r20
+ 372:	64 e0       	ldi	r22, 0x04	; 4
+ 374:	81 e0       	ldi	r24, 0x01	; 1
+ 376:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 37a:	c6 fb       	bst	r28, 6
+ 37c:	44 27       	eor	r20, r20
+ 37e:	40 f9       	bld	r20, 0
+ 380:	62 e0       	ldi	r22, 0x02	; 2
+ 382:	81 e0       	ldi	r24, 0x01	; 1
+ 384:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 388:	c5 fb       	bst	r28, 5
+ 38a:	44 27       	eor	r20, r20
+ 38c:	40 f9       	bld	r20, 0
+ 38e:	61 e0       	ldi	r22, 0x01	; 1
+ 390:	81 e0       	ldi	r24, 0x01	; 1
+ 392:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 396:	c4 fb       	bst	r28, 4
+ 398:	44 27       	eor	r20, r20
+ 39a:	40 f9       	bld	r20, 0
+ 39c:	60 e0       	ldi	r22, 0x00	; 0
+ 39e:	81 e0       	ldi	r24, 0x01	; 1
+ 3a0:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 3a4:	40 e0       	ldi	r20, 0x00	; 0
+ 3a6:	63 e0       	ldi	r22, 0x03	; 3
+ 3a8:	80 e0       	ldi	r24, 0x00	; 0
+ 3aa:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 3ae:	41 e0       	ldi	r20, 0x01	; 1
+ 3b0:	62 e0       	ldi	r22, 0x02	; 2
+ 3b2:	80 e0       	ldi	r24, 0x00	; 0
+ 3b4:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 3b8:	85 e0       	ldi	r24, 0x05	; 5
+ 3ba:	8a 95       	dec	r24
+ 3bc:	f1 f7       	brne	.-4      	; 0x3ba <LCD_Write_Command+0x54>
+ 3be:	00 00       	nop
+ 3c0:	40 e0       	ldi	r20, 0x00	; 0
+ 3c2:	62 e0       	ldi	r22, 0x02	; 2
+ 3c4:	80 e0       	ldi	r24, 0x00	; 0
+ 3c6:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 3ca:	8f e1       	ldi	r24, 0x1F	; 31
+ 3cc:	93 e0       	ldi	r25, 0x03	; 3
+ 3ce:	01 97       	sbiw	r24, 0x01	; 1
+ 3d0:	f1 f7       	brne	.-4      	; 0x3ce <LCD_Write_Command+0x68>
+ 3d2:	00 c0       	rjmp	.+0      	; 0x3d4 <LCD_Write_Command+0x6e>
+ 3d4:	00 00       	nop
+ 3d6:	c3 fb       	bst	r28, 3
+ 3d8:	44 27       	eor	r20, r20
+ 3da:	40 f9       	bld	r20, 0
+ 3dc:	64 e0       	ldi	r22, 0x04	; 4
+ 3de:	81 e0       	ldi	r24, 0x01	; 1
+ 3e0:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 3e4:	c2 fb       	bst	r28, 2
+ 3e6:	44 27       	eor	r20, r20
+ 3e8:	40 f9       	bld	r20, 0
+ 3ea:	62 e0       	ldi	r22, 0x02	; 2
+ 3ec:	81 e0       	ldi	r24, 0x01	; 1
+ 3ee:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 3f2:	c1 fb       	bst	r28, 1
+ 3f4:	44 27       	eor	r20, r20
+ 3f6:	40 f9       	bld	r20, 0
+ 3f8:	61 e0       	ldi	r22, 0x01	; 1
+ 3fa:	81 e0       	ldi	r24, 0x01	; 1
+ 3fc:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 400:	4c 2f       	mov	r20, r28
+ 402:	41 70       	andi	r20, 0x01	; 1
+ 404:	60 e0       	ldi	r22, 0x00	; 0
+ 406:	81 e0       	ldi	r24, 0x01	; 1
+ 408:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 40c:	41 e0       	ldi	r20, 0x01	; 1
+ 40e:	62 e0       	ldi	r22, 0x02	; 2
+ 410:	80 e0       	ldi	r24, 0x00	; 0
+ 412:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 416:	95 e0       	ldi	r25, 0x05	; 5
+ 418:	9a 95       	dec	r25
+ 41a:	f1 f7       	brne	.-4      	; 0x418 <__EEPROM_REGION_LENGTH__+0x18>
+ 41c:	00 00       	nop
+ 41e:	40 e0       	ldi	r20, 0x00	; 0
+ 420:	62 e0       	ldi	r22, 0x02	; 2
+ 422:	80 e0       	ldi	r24, 0x00	; 0
+ 424:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 428:	8f e3       	ldi	r24, 0x3F	; 63
+ 42a:	9f e1       	ldi	r25, 0x1F	; 31
+ 42c:	01 97       	sbiw	r24, 0x01	; 1
+ 42e:	f1 f7       	brne	.-4      	; 0x42c <__EEPROM_REGION_LENGTH__+0x2c>
+ 430:	00 c0       	rjmp	.+0      	; 0x432 <__EEPROM_REGION_LENGTH__+0x32>
+ 432:	00 00       	nop
+ 434:	81 e0       	ldi	r24, 0x01	; 1
+ 436:	cf 91       	pop	r28
+ 438:	08 95       	ret
+
+Disassembly of section .text.LCD_Initialize:
+
+0000050e <LCD_Initialize>:
+ 50e:	41 e0       	ldi	r20, 0x01	; 1
+ 510:	60 e0       	ldi	r22, 0x00	; 0
+ 512:	81 e0       	ldi	r24, 0x01	; 1
+ 514:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 518:	41 e0       	ldi	r20, 0x01	; 1
+ 51a:	61 e0       	ldi	r22, 0x01	; 1
+ 51c:	81 e0       	ldi	r24, 0x01	; 1
+ 51e:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 522:	41 e0       	ldi	r20, 0x01	; 1
+ 524:	62 e0       	ldi	r22, 0x02	; 2
+ 526:	81 e0       	ldi	r24, 0x01	; 1
+ 528:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 52c:	41 e0       	ldi	r20, 0x01	; 1
+ 52e:	64 e0       	ldi	r22, 0x04	; 4
+ 530:	81 e0       	ldi	r24, 0x01	; 1
+ 532:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 536:	41 e0       	ldi	r20, 0x01	; 1
+ 538:	63 e0       	ldi	r22, 0x03	; 3
+ 53a:	80 e0       	ldi	r24, 0x00	; 0
+ 53c:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 540:	41 e0       	ldi	r20, 0x01	; 1
+ 542:	62 e0       	ldi	r22, 0x02	; 2
+ 544:	80 e0       	ldi	r24, 0x00	; 0
+ 546:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 54a:	2f ef       	ldi	r18, 0xFF	; 255
+ 54c:	89 ef       	ldi	r24, 0xF9	; 249
+ 54e:	90 e0       	ldi	r25, 0x00	; 0
+ 550:	21 50       	subi	r18, 0x01	; 1
+ 552:	80 40       	sbci	r24, 0x00	; 0
+ 554:	90 40       	sbci	r25, 0x00	; 0
+ 556:	e1 f7       	brne	.-8      	; 0x550 <LCD_Initialize+0x42>
+ 558:	00 c0       	rjmp	.+0      	; 0x55a <LCD_Initialize+0x4c>
+ 55a:	00 00       	nop
+ 55c:	82 e0       	ldi	r24, 0x02	; 2
+ 55e:	0e 94 b3 01 	call	0x366	; 0x366 <LCD_Write_Command>
+ 562:	88 e2       	ldi	r24, 0x28	; 40
+ 564:	0e 94 b3 01 	call	0x366	; 0x366 <LCD_Write_Command>
+ 568:	8c e0       	ldi	r24, 0x0C	; 12
+ 56a:	0e 94 b3 01 	call	0x366	; 0x366 <LCD_Write_Command>
+ 56e:	86 e0       	ldi	r24, 0x06	; 6
+ 570:	0e 94 b3 01 	call	0x366	; 0x366 <LCD_Write_Command>
+ 574:	81 e0       	ldi	r24, 0x01	; 1
+ 576:	0e 94 b3 01 	call	0x366	; 0x366 <LCD_Write_Command>
+ 57a:	81 e0       	ldi	r24, 0x01	; 1
+ 57c:	08 95       	ret
+
+Disassembly of section .text.LCD_Write_Character:
+
+0000043a <LCD_Write_Character>:
+ 43a:	cf 93       	push	r28
+ 43c:	c8 2f       	mov	r28, r24
+ 43e:	48 2f       	mov	r20, r24
+ 440:	44 1f       	adc	r20, r20
+ 442:	44 27       	eor	r20, r20
+ 444:	44 1f       	adc	r20, r20
+ 446:	64 e0       	ldi	r22, 0x04	; 4
+ 448:	81 e0       	ldi	r24, 0x01	; 1
+ 44a:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 44e:	c6 fb       	bst	r28, 6
+ 450:	44 27       	eor	r20, r20
+ 452:	40 f9       	bld	r20, 0
+ 454:	62 e0       	ldi	r22, 0x02	; 2
+ 456:	81 e0       	ldi	r24, 0x01	; 1
+ 458:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 45c:	c5 fb       	bst	r28, 5
+ 45e:	44 27       	eor	r20, r20
+ 460:	40 f9       	bld	r20, 0
+ 462:	61 e0       	ldi	r22, 0x01	; 1
+ 464:	81 e0       	ldi	r24, 0x01	; 1
+ 466:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 46a:	c4 fb       	bst	r28, 4
+ 46c:	44 27       	eor	r20, r20
+ 46e:	40 f9       	bld	r20, 0
+ 470:	60 e0       	ldi	r22, 0x00	; 0
+ 472:	81 e0       	ldi	r24, 0x01	; 1
+ 474:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 478:	41 e0       	ldi	r20, 0x01	; 1
+ 47a:	63 e0       	ldi	r22, 0x03	; 3
+ 47c:	80 e0       	ldi	r24, 0x00	; 0
+ 47e:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 482:	41 e0       	ldi	r20, 0x01	; 1
+ 484:	62 e0       	ldi	r22, 0x02	; 2
+ 486:	80 e0       	ldi	r24, 0x00	; 0
+ 488:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 48c:	85 e0       	ldi	r24, 0x05	; 5
+ 48e:	8a 95       	dec	r24
+ 490:	f1 f7       	brne	.-4      	; 0x48e <LCD_Write_Character+0x54>
+ 492:	00 00       	nop
+ 494:	40 e0       	ldi	r20, 0x00	; 0
+ 496:	62 e0       	ldi	r22, 0x02	; 2
+ 498:	80 e0       	ldi	r24, 0x00	; 0
+ 49a:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 49e:	8f e1       	ldi	r24, 0x1F	; 31
+ 4a0:	93 e0       	ldi	r25, 0x03	; 3
+ 4a2:	01 97       	sbiw	r24, 0x01	; 1
+ 4a4:	f1 f7       	brne	.-4      	; 0x4a2 <LCD_Write_Character+0x68>
+ 4a6:	00 c0       	rjmp	.+0      	; 0x4a8 <LCD_Write_Character+0x6e>
+ 4a8:	00 00       	nop
+ 4aa:	c3 fb       	bst	r28, 3
+ 4ac:	44 27       	eor	r20, r20
+ 4ae:	40 f9       	bld	r20, 0
+ 4b0:	64 e0       	ldi	r22, 0x04	; 4
+ 4b2:	81 e0       	ldi	r24, 0x01	; 1
+ 4b4:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 4b8:	c2 fb       	bst	r28, 2
+ 4ba:	44 27       	eor	r20, r20
+ 4bc:	40 f9       	bld	r20, 0
+ 4be:	62 e0       	ldi	r22, 0x02	; 2
+ 4c0:	81 e0       	ldi	r24, 0x01	; 1
+ 4c2:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 4c6:	c1 fb       	bst	r28, 1
+ 4c8:	44 27       	eor	r20, r20
+ 4ca:	40 f9       	bld	r20, 0
+ 4cc:	61 e0       	ldi	r22, 0x01	; 1
+ 4ce:	81 e0       	ldi	r24, 0x01	; 1
+ 4d0:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 4d4:	4c 2f       	mov	r20, r28
+ 4d6:	41 70       	andi	r20, 0x01	; 1
+ 4d8:	60 e0       	ldi	r22, 0x00	; 0
+ 4da:	81 e0       	ldi	r24, 0x01	; 1
+ 4dc:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 4e0:	41 e0       	ldi	r20, 0x01	; 1
+ 4e2:	62 e0       	ldi	r22, 0x02	; 2
+ 4e4:	80 e0       	ldi	r24, 0x00	; 0
+ 4e6:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 4ea:	95 e0       	ldi	r25, 0x05	; 5
+ 4ec:	9a 95       	dec	r25
+ 4ee:	f1 f7       	brne	.-4      	; 0x4ec <LCD_Write_Character+0xb2>
+ 4f0:	00 00       	nop
+ 4f2:	40 e0       	ldi	r20, 0x00	; 0
+ 4f4:	62 e0       	ldi	r22, 0x02	; 2
+ 4f6:	80 e0       	ldi	r24, 0x00	; 0
+ 4f8:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 4fc:	8f e3       	ldi	r24, 0x3F	; 63
+ 4fe:	9f e1       	ldi	r25, 0x1F	; 31
+ 500:	01 97       	sbiw	r24, 0x01	; 1
+ 502:	f1 f7       	brne	.-4      	; 0x500 <LCD_Write_Character+0xc6>
+ 504:	00 c0       	rjmp	.+0      	; 0x506 <LCD_Write_Character+0xcc>
+ 506:	00 00       	nop
+ 508:	81 e0       	ldi	r24, 0x01	; 1
+ 50a:	cf 91       	pop	r28
+ 50c:	08 95       	ret
+
+Disassembly of section .text.LCD_Write_String:
+
+0000078a <LCD_Write_String>:
+	_delay_ms(2);
+	return state_error;
+}
+
+ERROR_STATE LCD_Write_String(const char *str)
+{
+ 78a:	cf 92       	push	r12
+ 78c:	df 92       	push	r13
+ 78e:	ef 92       	push	r14
+ 790:	6b 01       	movw	r12, r22
+ 792:	e8 2e       	mov	r14, r24
+	ERROR_STATE state_error = SUCCESS;
+	while (*str != '\0')
+ 794:	06 c0       	rjmp	.+12     	; 0x7a2 <LCD_Write_String+0x18>
+	{
+		LCD_Write_Character(*str);
+ 796:	0e 94 1d 02 	call	0x43a	; 0x43a <LCD_Write_Character>
+		str++;
+ 79a:	8f ef       	ldi	r24, 0xFF	; 255
+ 79c:	c8 1a       	sub	r12, r24
+ 79e:	d8 0a       	sbc	r13, r24
+ 7a0:	e8 0a       	sbc	r14, r24
+}
+
+ERROR_STATE LCD_Write_String(const char *str)
+{
+	ERROR_STATE state_error = SUCCESS;
+	while (*str != '\0')
+ 7a2:	f6 01       	movw	r30, r12
+ 7a4:	84 91       	lpm	r24, Z
+ 7a6:	e7 fc       	sbrc	r14, 7
+ 7a8:	80 81       	ld	r24, Z
+ 7aa:	81 11       	cpse	r24, r1
+ 7ac:	f4 cf       	rjmp	.-24     	; 0x796 <LCD_Write_String+0xc>
+	{
+		LCD_Write_Character(*str);
+		str++;
+	}
+	return state_error;
+}
+ 7ae:	81 e0       	ldi	r24, 0x01	; 1
+ 7b0:	ef 90       	pop	r14
+ 7b2:	df 90       	pop	r13
+ 7b4:	cf 90       	pop	r12
+ 7b6:	08 95       	ret
+
+Disassembly of section .text.LCD_LINE_position:
+
+000006c2 <LCD_LINE_position>:
+	Inputs:	row and column
+	Output:	state
+	Description: Moves the cursor position to the provided
+	row and column.
+*/
+ERROR_STATE LCD_LINE_position(LCD_LINES row , SINT8_t column){
+ 6c2:	cf 93       	push	r28
+	ERROR_STATE state_error = SUCCESS;
+	UINT8_t address =0;
+	
+	if(column < 20 && column > 0){
+ 6c4:	9f ef       	ldi	r25, 0xFF	; 255
+ 6c6:	96 0f       	add	r25, r22
+ 6c8:	93 31       	cpi	r25, 0x13	; 19
+ 6ca:	e8 f4       	brcc	.+58     	; 0x706 <LCD_LINE_position+0x44>
+		switch(row){
+ 6cc:	81 30       	cpi	r24, 0x01	; 1
+ 6ce:	91 f0       	breq	.+36     	; 0x6f4 <LCD_LINE_position+0x32>
+ 6d0:	28 f0       	brcs	.+10     	; 0x6dc <LCD_LINE_position+0x1a>
+ 6d2:	82 30       	cpi	r24, 0x02	; 2
+ 6d4:	31 f0       	breq	.+12     	; 0x6e2 <LCD_LINE_position+0x20>
+ 6d6:	83 30       	cpi	r24, 0x03	; 3
+ 6d8:	39 f0       	breq	.+14     	; 0x6e8 <LCD_LINE_position+0x26>
+ 6da:	09 c0       	rjmp	.+18     	; 0x6ee <LCD_LINE_position+0x2c>
+			case LCD_LINE1:
+				address = 0x00;
+ 6dc:	80 e0       	ldi	r24, 0x00	; 0
+	Output:	state
+	Description: Moves the cursor position to the provided
+	row and column.
+*/
+ERROR_STATE LCD_LINE_position(LCD_LINES row , SINT8_t column){
+	ERROR_STATE state_error = SUCCESS;
+ 6de:	c1 e0       	ldi	r28, 0x01	; 1
+ 6e0:	0b c0       	rjmp	.+22     	; 0x6f8 <LCD_LINE_position+0x36>
+				break;
+			case LCD_LINE2:
+				address = 0x40;
+				break;
+			case LCD_LINE3:
+				address = 0x14;
+ 6e2:	84 e1       	ldi	r24, 0x14	; 20
+	Output:	state
+	Description: Moves the cursor position to the provided
+	row and column.
+*/
+ERROR_STATE LCD_LINE_position(LCD_LINES row , SINT8_t column){
+	ERROR_STATE state_error = SUCCESS;
+ 6e4:	c1 e0       	ldi	r28, 0x01	; 1
+			case LCD_LINE2:
+				address = 0x40;
+				break;
+			case LCD_LINE3:
+				address = 0x14;
+				break;
+ 6e6:	08 c0       	rjmp	.+16     	; 0x6f8 <LCD_LINE_position+0x36>
+			case LCD_LINE4:
+				address = 0x54;
+ 6e8:	84 e5       	ldi	r24, 0x54	; 84
+	Output:	state
+	Description: Moves the cursor position to the provided
+	row and column.
+*/
+ERROR_STATE LCD_LINE_position(LCD_LINES row , SINT8_t column){
+	ERROR_STATE state_error = SUCCESS;
+ 6ea:	c1 e0       	ldi	r28, 0x01	; 1
+			case LCD_LINE3:
+				address = 0x14;
+				break;
+			case LCD_LINE4:
+				address = 0x54;
+				break;
+ 6ec:	05 c0       	rjmp	.+10     	; 0x6f8 <LCD_LINE_position+0x36>
+	Description: Moves the cursor position to the provided
+	row and column.
+*/
+ERROR_STATE LCD_LINE_position(LCD_LINES row , SINT8_t column){
+	ERROR_STATE state_error = SUCCESS;
+	UINT8_t address =0;
+ 6ee:	80 e0       	ldi	r24, 0x00	; 0
+				break;
+			case LCD_LINE4:
+				address = 0x54;
+				break;
+			default:
+				state_error = FAIL;
+ 6f0:	c0 e0       	ldi	r28, 0x00	; 0
+				break;
+ 6f2:	02 c0       	rjmp	.+4      	; 0x6f8 <LCD_LINE_position+0x36>
+		switch(row){
+			case LCD_LINE1:
+				address = 0x00;
+				break;
+			case LCD_LINE2:
+				address = 0x40;
+ 6f4:	80 e4       	ldi	r24, 0x40	; 64
+	Output:	state
+	Description: Moves the cursor position to the provided
+	row and column.
+*/
+ERROR_STATE LCD_LINE_position(LCD_LINES row , SINT8_t column){
+	ERROR_STATE state_error = SUCCESS;
+ 6f6:	c1 e0       	ldi	r28, 0x01	; 1
+				break;
+			default:
+				state_error = FAIL;
+				break;
+		}
+		if(SUCCESS == state_error){
+ 6f8:	c1 30       	cpi	r28, 0x01	; 1
+ 6fa:	31 f4       	brne	.+12     	; 0x708 <LCD_LINE_position+0x46>
+			address += column;
+ 6fc:	86 0f       	add	r24, r22
+			LCD_Write_Command(0x80+address);
+ 6fe:	80 58       	subi	r24, 0x80	; 128
+ 700:	0e 94 b3 01 	call	0x366	; 0x366 <LCD_Write_Command>
+ 704:	01 c0       	rjmp	.+2      	; 0x708 <LCD_LINE_position+0x46>
+		}else{
+			;
+		}	
+	}else{
+		state_error = FAIL;
+ 706:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+
+	return state_error;
+ 708:	8c 2f       	mov	r24, r28
+ 70a:	cf 91       	pop	r28
+ 70c:	08 95       	ret
+
+Disassembly of section .text.RED_LED_Initializ:
+
+0000083e <RED_LED_Initializ>:
+ */ 
+
+#include "RED_LED_Private.h"
+
+void RED_LED_Initializ(void){
+	DIO_SetPin_Direction(RED_LED_PORT,RED_LED_PIN,RED_LED_OUTPUT);
+ 83e:	41 e0       	ldi	r20, 0x01	; 1
+ 840:	67 e0       	ldi	r22, 0x07	; 7
+ 842:	81 e0       	ldi	r24, 0x01	; 1
+ 844:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 848:	08 95       	ret
+
+Disassembly of section .text.RED_LED_ON:
+
+0000084a <RED_LED_ON>:
+}
+void RED_LED_ON(void){
+	DIO_SetPin_Value(RED_LED_PORT,RED_LED_PIN,RED_LED_HIGH);
+ 84a:	41 e0       	ldi	r20, 0x01	; 1
+ 84c:	67 e0       	ldi	r22, 0x07	; 7
+ 84e:	81 e0       	ldi	r24, 0x01	; 1
+ 850:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 854:	08 95       	ret
+
+Disassembly of section .text.RED_LED_OFF:
+
+00000856 <RED_LED_OFF>:
+}
+void RED_LED_OFF(void){
+	DIO_SetPin_Value(RED_LED_PORT,RED_LED_PIN,RED_LED_LOW);
+ 856:	40 e0       	ldi	r20, 0x00	; 0
+ 858:	67 e0       	ldi	r22, 0x07	; 7
+ 85a:	81 e0       	ldi	r24, 0x01	; 1
+ 85c:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 860:	08 95       	ret
+
+Disassembly of section .text.YELLOW_LED_Initializ:
+
+00000862 <YELLOW_LED_Initializ>:
+ *  Author: aliae
+ */ 
+#include "YELLOW_LED_Private.h"
+
+void YELLOW_LED_Initializ(void){
+	DIO_SetPin_Direction(YELLOW_LED_PORT,YELLOW_LED_PIN,YELLOW_LED_OUTPUT);
+ 862:	41 e0       	ldi	r20, 0x01	; 1
+ 864:	66 e0       	ldi	r22, 0x06	; 6
+ 866:	80 e0       	ldi	r24, 0x00	; 0
+ 868:	0e 94 b5 00 	call	0x16a	; 0x16a <DIO_SetPin_Direction>
+ 86c:	08 95       	ret
+
+Disassembly of section .text.YELLOW_LED_ON:
+
+0000086e <YELLOW_LED_ON>:
+}
+void YELLOW_LED_ON(void){
+	DIO_SetPin_Value(YELLOW_LED_PORT,YELLOW_LED_PIN,YELLOW_LED_HIGH);
+ 86e:	41 e0       	ldi	r20, 0x01	; 1
+ 870:	66 e0       	ldi	r22, 0x06	; 6
+ 872:	80 e0       	ldi	r24, 0x00	; 0
+ 874:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 878:	08 95       	ret
+
+Disassembly of section .text.YELLOW_LED_OFF:
+
+0000087a <YELLOW_LED_OFF>:
+}
+void YELLOW_LED_OFF(void){
+	DIO_SetPin_Value(YELLOW_LED_PORT,YELLOW_LED_PIN,YELLOW_LED_LOW);
+ 87a:	40 e0       	ldi	r20, 0x00	; 0
+ 87c:	66 e0       	ldi	r22, 0x06	; 6
+ 87e:	80 e0       	ldi	r24, 0x00	; 0
+ 880:	0e 94 34 01 	call	0x268	; 0x268 <DIO_SetPin_Value>
+ 884:	08 95       	ret
+
+Disassembly of section .text.main:
+
+00000886 <main>:
+
+#include "main.h"
+
+
+int main() {
+app_init();
+ 886:	0e 94 03 04 	call	0x806	; 0x806 <app_init>
+while(1){
+app_main();
+ 88a:	0e 94 dc 03 	call	0x7b8	; 0x7b8 <app_main>
+ 88e:	fd cf       	rjmp	.-6      	; 0x88a <main+0x4>
+
+Disassembly of section .text.DIO_SetPin_Direction:
+
+0000016a <DIO_SetPin_Direction>:
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+	switch (state)
+ 16a:	44 23       	and	r20, r20
+ 16c:	19 f0       	breq	.+6      	; 0x174 <DIO_SetPin_Direction+0xa>
+ 16e:	41 30       	cpi	r20, 0x01	; 1
+ 170:	e9 f1       	breq	.+122    	; 0x1ec <DIO_SetPin_Direction+0x82>
+ 172:	74 c0       	rjmp	.+232    	; 0x25c <DIO_SetPin_Direction+0xf2>
+	{
+		case DIO_INPUT:
+		switch(port)
+ 174:	81 30       	cpi	r24, 0x01	; 1
+ 176:	99 f0       	breq	.+38     	; 0x19e <DIO_SetPin_Direction+0x34>
+ 178:	28 f0       	brcs	.+10     	; 0x184 <DIO_SetPin_Direction+0x1a>
+ 17a:	82 30       	cpi	r24, 0x02	; 2
+ 17c:	e9 f0       	breq	.+58     	; 0x1b8 <DIO_SetPin_Direction+0x4e>
+ 17e:	83 30       	cpi	r24, 0x03	; 3
+ 180:	41 f1       	breq	.+80     	; 0x1d2 <DIO_SetPin_Direction+0x68>
+ 182:	6e c0       	rjmp	.+220    	; 0x260 <DIO_SetPin_Direction+0xf6>
+		{
+			case DIO_PORTA:
+			CLR_BIT(DDRA, pin);
+ 184:	2a b3       	in	r18, 0x1a	; 26
+ 186:	81 e0       	ldi	r24, 0x01	; 1
+ 188:	90 e0       	ldi	r25, 0x00	; 0
+ 18a:	02 c0       	rjmp	.+4      	; 0x190 <DIO_SetPin_Direction+0x26>
+ 18c:	88 0f       	add	r24, r24
+ 18e:	99 1f       	adc	r25, r25
+ 190:	6a 95       	dec	r22
+ 192:	e2 f7       	brpl	.-8      	; 0x18c <DIO_SetPin_Direction+0x22>
+ 194:	80 95       	com	r24
+ 196:	82 23       	and	r24, r18
+ 198:	8a bb       	out	0x1a, r24	; 26
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 19a:	81 e0       	ldi	r24, 0x01	; 1
+		case DIO_INPUT:
+		switch(port)
+		{
+			case DIO_PORTA:
+			CLR_BIT(DDRA, pin);
+			break;
+ 19c:	08 95       	ret
+			case DIO_PORTB:
+			CLR_BIT(DDRB, pin);
+ 19e:	27 b3       	in	r18, 0x17	; 23
+ 1a0:	81 e0       	ldi	r24, 0x01	; 1
+ 1a2:	90 e0       	ldi	r25, 0x00	; 0
+ 1a4:	02 c0       	rjmp	.+4      	; 0x1aa <DIO_SetPin_Direction+0x40>
+ 1a6:	88 0f       	add	r24, r24
+ 1a8:	99 1f       	adc	r25, r25
+ 1aa:	6a 95       	dec	r22
+ 1ac:	e2 f7       	brpl	.-8      	; 0x1a6 <DIO_SetPin_Direction+0x3c>
+ 1ae:	80 95       	com	r24
+ 1b0:	82 23       	and	r24, r18
+ 1b2:	87 bb       	out	0x17, r24	; 23
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 1b4:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTA:
+			CLR_BIT(DDRA, pin);
+			break;
+			case DIO_PORTB:
+			CLR_BIT(DDRB, pin);
+			break;
+ 1b6:	08 95       	ret
+			case DIO_PORTC:
+			CLR_BIT(DDRC, pin);
+ 1b8:	24 b3       	in	r18, 0x14	; 20
+ 1ba:	81 e0       	ldi	r24, 0x01	; 1
+ 1bc:	90 e0       	ldi	r25, 0x00	; 0
+ 1be:	02 c0       	rjmp	.+4      	; 0x1c4 <DIO_SetPin_Direction+0x5a>
+ 1c0:	88 0f       	add	r24, r24
+ 1c2:	99 1f       	adc	r25, r25
+ 1c4:	6a 95       	dec	r22
+ 1c6:	e2 f7       	brpl	.-8      	; 0x1c0 <DIO_SetPin_Direction+0x56>
+ 1c8:	80 95       	com	r24
+ 1ca:	82 23       	and	r24, r18
+ 1cc:	84 bb       	out	0x14, r24	; 20
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 1ce:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTB:
+			CLR_BIT(DDRB, pin);
+			break;
+			case DIO_PORTC:
+			CLR_BIT(DDRC, pin);
+			break;
+ 1d0:	08 95       	ret
+			case DIO_PORTD:
+			CLR_BIT(DDRD, pin);
+ 1d2:	21 b3       	in	r18, 0x11	; 17
+ 1d4:	81 e0       	ldi	r24, 0x01	; 1
+ 1d6:	90 e0       	ldi	r25, 0x00	; 0
+ 1d8:	02 c0       	rjmp	.+4      	; 0x1de <DIO_SetPin_Direction+0x74>
+ 1da:	88 0f       	add	r24, r24
+ 1dc:	99 1f       	adc	r25, r25
+ 1de:	6a 95       	dec	r22
+ 1e0:	e2 f7       	brpl	.-8      	; 0x1da <DIO_SetPin_Direction+0x70>
+ 1e2:	80 95       	com	r24
+ 1e4:	82 23       	and	r24, r18
+ 1e6:	81 bb       	out	0x11, r24	; 17
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 1e8:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTC:
+			CLR_BIT(DDRC, pin);
+			break;
+			case DIO_PORTD:
+			CLR_BIT(DDRD, pin);
+			break;
+ 1ea:	08 95       	ret
+			state_error = FAIL;
+			break;
+		}
+		break;
+		case DIO_OUTPUT:
+		switch(port)
+ 1ec:	81 30       	cpi	r24, 0x01	; 1
+ 1ee:	91 f0       	breq	.+36     	; 0x214 <DIO_SetPin_Direction+0xaa>
+ 1f0:	28 f0       	brcs	.+10     	; 0x1fc <DIO_SetPin_Direction+0x92>
+ 1f2:	82 30       	cpi	r24, 0x02	; 2
+ 1f4:	d9 f0       	breq	.+54     	; 0x22c <DIO_SetPin_Direction+0xc2>
+ 1f6:	83 30       	cpi	r24, 0x03	; 3
+ 1f8:	29 f1       	breq	.+74     	; 0x244 <DIO_SetPin_Direction+0xda>
+ 1fa:	34 c0       	rjmp	.+104    	; 0x264 <DIO_SetPin_Direction+0xfa>
+		{
+			case DIO_PORTA:
+			SET_BIT(DDRA, pin);
+ 1fc:	2a b3       	in	r18, 0x1a	; 26
+ 1fe:	81 e0       	ldi	r24, 0x01	; 1
+ 200:	90 e0       	ldi	r25, 0x00	; 0
+ 202:	02 c0       	rjmp	.+4      	; 0x208 <DIO_SetPin_Direction+0x9e>
+ 204:	88 0f       	add	r24, r24
+ 206:	99 1f       	adc	r25, r25
+ 208:	6a 95       	dec	r22
+ 20a:	e2 f7       	brpl	.-8      	; 0x204 <DIO_SetPin_Direction+0x9a>
+ 20c:	82 2b       	or	r24, r18
+ 20e:	8a bb       	out	0x1a, r24	; 26
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 210:	81 e0       	ldi	r24, 0x01	; 1
+		case DIO_OUTPUT:
+		switch(port)
+		{
+			case DIO_PORTA:
+			SET_BIT(DDRA, pin);
+			break;
+ 212:	08 95       	ret
+			case DIO_PORTB:
+			SET_BIT(DDRB, pin);
+ 214:	27 b3       	in	r18, 0x17	; 23
+ 216:	81 e0       	ldi	r24, 0x01	; 1
+ 218:	90 e0       	ldi	r25, 0x00	; 0
+ 21a:	02 c0       	rjmp	.+4      	; 0x220 <DIO_SetPin_Direction+0xb6>
+ 21c:	88 0f       	add	r24, r24
+ 21e:	99 1f       	adc	r25, r25
+ 220:	6a 95       	dec	r22
+ 222:	e2 f7       	brpl	.-8      	; 0x21c <DIO_SetPin_Direction+0xb2>
+ 224:	82 2b       	or	r24, r18
+ 226:	87 bb       	out	0x17, r24	; 23
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 228:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTA:
+			SET_BIT(DDRA, pin);
+			break;
+			case DIO_PORTB:
+			SET_BIT(DDRB, pin);
+			break;
+ 22a:	08 95       	ret
+			case DIO_PORTC:
+			SET_BIT(DDRC, pin);
+ 22c:	24 b3       	in	r18, 0x14	; 20
+ 22e:	81 e0       	ldi	r24, 0x01	; 1
+ 230:	90 e0       	ldi	r25, 0x00	; 0
+ 232:	02 c0       	rjmp	.+4      	; 0x238 <DIO_SetPin_Direction+0xce>
+ 234:	88 0f       	add	r24, r24
+ 236:	99 1f       	adc	r25, r25
+ 238:	6a 95       	dec	r22
+ 23a:	e2 f7       	brpl	.-8      	; 0x234 <DIO_SetPin_Direction+0xca>
+ 23c:	82 2b       	or	r24, r18
+ 23e:	84 bb       	out	0x14, r24	; 20
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 240:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTB:
+			SET_BIT(DDRB, pin);
+			break;
+			case DIO_PORTC:
+			SET_BIT(DDRC, pin);
+			break;
+ 242:	08 95       	ret
+			case DIO_PORTD:
+			SET_BIT(DDRD, pin);
+ 244:	21 b3       	in	r18, 0x11	; 17
+ 246:	81 e0       	ldi	r24, 0x01	; 1
+ 248:	90 e0       	ldi	r25, 0x00	; 0
+ 24a:	02 c0       	rjmp	.+4      	; 0x250 <DIO_SetPin_Direction+0xe6>
+ 24c:	88 0f       	add	r24, r24
+ 24e:	99 1f       	adc	r25, r25
+ 250:	6a 95       	dec	r22
+ 252:	e2 f7       	brpl	.-8      	; 0x24c <DIO_SetPin_Direction+0xe2>
+ 254:	82 2b       	or	r24, r18
+ 256:	81 bb       	out	0x11, r24	; 17
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 258:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTC:
+			SET_BIT(DDRC, pin);
+			break;
+			case DIO_PORTD:
+			SET_BIT(DDRD, pin);
+			break;
+ 25a:	08 95       	ret
+
+#include "DIO_Private.h"
+
+ERROR_STATE DIO_SetPin_Direction(DIO_Port port, DIO_Pin pin, DIO_State state)
+{
+	ERROR_STATE state_error = SUCCESS;
+ 25c:	81 e0       	ldi	r24, 0x01	; 1
+ 25e:	08 95       	ret
+			break;
+			case DIO_PORTD:
+			CLR_BIT(DDRD, pin);
+			break;
+			default:
+			state_error = FAIL;
+ 260:	80 e0       	ldi	r24, 0x00	; 0
+ 262:	08 95       	ret
+			break;
+			case DIO_PORTD:
+			SET_BIT(DDRD, pin);
+			break;
+			default:
+			state_error = FAIL;
+ 264:	80 e0       	ldi	r24, 0x00	; 0
+			break;
+		}
+		break;
+	}
+	return state_error;
+}
+ 266:	08 95       	ret
+
+Disassembly of section .text.DIO_SetPin_Value:
+
+00000268 <DIO_SetPin_Value>:
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+	switch (status)
+ 268:	44 23       	and	r20, r20
+ 26a:	19 f0       	breq	.+6      	; 0x272 <DIO_SetPin_Value+0xa>
+ 26c:	41 30       	cpi	r20, 0x01	; 1
+ 26e:	e9 f1       	breq	.+122    	; 0x2ea <DIO_SetPin_Value+0x82>
+ 270:	74 c0       	rjmp	.+232    	; 0x35a <DIO_SetPin_Value+0xf2>
+	{
+		case DIO_LOW:
+		switch(port)
+ 272:	81 30       	cpi	r24, 0x01	; 1
+ 274:	99 f0       	breq	.+38     	; 0x29c <DIO_SetPin_Value+0x34>
+ 276:	28 f0       	brcs	.+10     	; 0x282 <DIO_SetPin_Value+0x1a>
+ 278:	82 30       	cpi	r24, 0x02	; 2
+ 27a:	e9 f0       	breq	.+58     	; 0x2b6 <DIO_SetPin_Value+0x4e>
+ 27c:	83 30       	cpi	r24, 0x03	; 3
+ 27e:	41 f1       	breq	.+80     	; 0x2d0 <DIO_SetPin_Value+0x68>
+ 280:	6e c0       	rjmp	.+220    	; 0x35e <DIO_SetPin_Value+0xf6>
+		{
+			case DIO_PORTA:
+			CLR_BIT(PORTA, pin);
+ 282:	2b b3       	in	r18, 0x1b	; 27
+ 284:	81 e0       	ldi	r24, 0x01	; 1
+ 286:	90 e0       	ldi	r25, 0x00	; 0
+ 288:	02 c0       	rjmp	.+4      	; 0x28e <DIO_SetPin_Value+0x26>
+ 28a:	88 0f       	add	r24, r24
+ 28c:	99 1f       	adc	r25, r25
+ 28e:	6a 95       	dec	r22
+ 290:	e2 f7       	brpl	.-8      	; 0x28a <DIO_SetPin_Value+0x22>
+ 292:	80 95       	com	r24
+ 294:	82 23       	and	r24, r18
+ 296:	8b bb       	out	0x1b, r24	; 27
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 298:	81 e0       	ldi	r24, 0x01	; 1
+		case DIO_LOW:
+		switch(port)
+		{
+			case DIO_PORTA:
+			CLR_BIT(PORTA, pin);
+			break;
+ 29a:	08 95       	ret
+			case DIO_PORTB:
+			CLR_BIT(PORTB, pin);
+ 29c:	28 b3       	in	r18, 0x18	; 24
+ 29e:	81 e0       	ldi	r24, 0x01	; 1
+ 2a0:	90 e0       	ldi	r25, 0x00	; 0
+ 2a2:	02 c0       	rjmp	.+4      	; 0x2a8 <DIO_SetPin_Value+0x40>
+ 2a4:	88 0f       	add	r24, r24
+ 2a6:	99 1f       	adc	r25, r25
+ 2a8:	6a 95       	dec	r22
+ 2aa:	e2 f7       	brpl	.-8      	; 0x2a4 <DIO_SetPin_Value+0x3c>
+ 2ac:	80 95       	com	r24
+ 2ae:	82 23       	and	r24, r18
+ 2b0:	88 bb       	out	0x18, r24	; 24
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 2b2:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTA:
+			CLR_BIT(PORTA, pin);
+			break;
+			case DIO_PORTB:
+			CLR_BIT(PORTB, pin);
+			break;
+ 2b4:	08 95       	ret
+			case DIO_PORTC:
+			CLR_BIT(PORTC, pin);
+ 2b6:	25 b3       	in	r18, 0x15	; 21
+ 2b8:	81 e0       	ldi	r24, 0x01	; 1
+ 2ba:	90 e0       	ldi	r25, 0x00	; 0
+ 2bc:	02 c0       	rjmp	.+4      	; 0x2c2 <DIO_SetPin_Value+0x5a>
+ 2be:	88 0f       	add	r24, r24
+ 2c0:	99 1f       	adc	r25, r25
+ 2c2:	6a 95       	dec	r22
+ 2c4:	e2 f7       	brpl	.-8      	; 0x2be <DIO_SetPin_Value+0x56>
+ 2c6:	80 95       	com	r24
+ 2c8:	82 23       	and	r24, r18
+ 2ca:	85 bb       	out	0x15, r24	; 21
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 2cc:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTB:
+			CLR_BIT(PORTB, pin);
+			break;
+			case DIO_PORTC:
+			CLR_BIT(PORTC, pin);
+			break;
+ 2ce:	08 95       	ret
+			case DIO_PORTD:
+			CLR_BIT(PORTD, pin);
+ 2d0:	22 b3       	in	r18, 0x12	; 18
+ 2d2:	81 e0       	ldi	r24, 0x01	; 1
+ 2d4:	90 e0       	ldi	r25, 0x00	; 0
+ 2d6:	02 c0       	rjmp	.+4      	; 0x2dc <DIO_SetPin_Value+0x74>
+ 2d8:	88 0f       	add	r24, r24
+ 2da:	99 1f       	adc	r25, r25
+ 2dc:	6a 95       	dec	r22
+ 2de:	e2 f7       	brpl	.-8      	; 0x2d8 <DIO_SetPin_Value+0x70>
+ 2e0:	80 95       	com	r24
+ 2e2:	82 23       	and	r24, r18
+ 2e4:	82 bb       	out	0x12, r24	; 18
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 2e6:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTC:
+			CLR_BIT(PORTC, pin);
+			break;
+			case DIO_PORTD:
+			CLR_BIT(PORTD, pin);
+			break;
+ 2e8:	08 95       	ret
+			state_error = FAIL;
+			break;
+		}
+		break;
+		case DIO_HIGH:
+		switch(port)
+ 2ea:	81 30       	cpi	r24, 0x01	; 1
+ 2ec:	91 f0       	breq	.+36     	; 0x312 <DIO_SetPin_Value+0xaa>
+ 2ee:	28 f0       	brcs	.+10     	; 0x2fa <DIO_SetPin_Value+0x92>
+ 2f0:	82 30       	cpi	r24, 0x02	; 2
+ 2f2:	d9 f0       	breq	.+54     	; 0x32a <DIO_SetPin_Value+0xc2>
+ 2f4:	83 30       	cpi	r24, 0x03	; 3
+ 2f6:	29 f1       	breq	.+74     	; 0x342 <DIO_SetPin_Value+0xda>
+ 2f8:	34 c0       	rjmp	.+104    	; 0x362 <DIO_SetPin_Value+0xfa>
+		{
+			case DIO_PORTA:
+			SET_BIT(PORTA, pin);
+ 2fa:	2b b3       	in	r18, 0x1b	; 27
+ 2fc:	81 e0       	ldi	r24, 0x01	; 1
+ 2fe:	90 e0       	ldi	r25, 0x00	; 0
+ 300:	02 c0       	rjmp	.+4      	; 0x306 <DIO_SetPin_Value+0x9e>
+ 302:	88 0f       	add	r24, r24
+ 304:	99 1f       	adc	r25, r25
+ 306:	6a 95       	dec	r22
+ 308:	e2 f7       	brpl	.-8      	; 0x302 <DIO_SetPin_Value+0x9a>
+ 30a:	82 2b       	or	r24, r18
+ 30c:	8b bb       	out	0x1b, r24	; 27
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 30e:	81 e0       	ldi	r24, 0x01	; 1
+		case DIO_HIGH:
+		switch(port)
+		{
+			case DIO_PORTA:
+			SET_BIT(PORTA, pin);
+			break;
+ 310:	08 95       	ret
+			case DIO_PORTB:
+			SET_BIT(PORTB, pin);
+ 312:	28 b3       	in	r18, 0x18	; 24
+ 314:	81 e0       	ldi	r24, 0x01	; 1
+ 316:	90 e0       	ldi	r25, 0x00	; 0
+ 318:	02 c0       	rjmp	.+4      	; 0x31e <DIO_SetPin_Value+0xb6>
+ 31a:	88 0f       	add	r24, r24
+ 31c:	99 1f       	adc	r25, r25
+ 31e:	6a 95       	dec	r22
+ 320:	e2 f7       	brpl	.-8      	; 0x31a <DIO_SetPin_Value+0xb2>
+ 322:	82 2b       	or	r24, r18
+ 324:	88 bb       	out	0x18, r24	; 24
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 326:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTA:
+			SET_BIT(PORTA, pin);
+			break;
+			case DIO_PORTB:
+			SET_BIT(PORTB, pin);
+			break;
+ 328:	08 95       	ret
+			case DIO_PORTC:
+			SET_BIT(PORTC, pin);
+ 32a:	25 b3       	in	r18, 0x15	; 21
+ 32c:	81 e0       	ldi	r24, 0x01	; 1
+ 32e:	90 e0       	ldi	r25, 0x00	; 0
+ 330:	02 c0       	rjmp	.+4      	; 0x336 <DIO_SetPin_Value+0xce>
+ 332:	88 0f       	add	r24, r24
+ 334:	99 1f       	adc	r25, r25
+ 336:	6a 95       	dec	r22
+ 338:	e2 f7       	brpl	.-8      	; 0x332 <DIO_SetPin_Value+0xca>
+ 33a:	82 2b       	or	r24, r18
+ 33c:	85 bb       	out	0x15, r24	; 21
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 33e:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTB:
+			SET_BIT(PORTB, pin);
+			break;
+			case DIO_PORTC:
+			SET_BIT(PORTC, pin);
+			break;
+ 340:	08 95       	ret
+			case DIO_PORTD:
+			SET_BIT(PORTD, pin);
+ 342:	22 b3       	in	r18, 0x12	; 18
+ 344:	81 e0       	ldi	r24, 0x01	; 1
+ 346:	90 e0       	ldi	r25, 0x00	; 0
+ 348:	02 c0       	rjmp	.+4      	; 0x34e <DIO_SetPin_Value+0xe6>
+ 34a:	88 0f       	add	r24, r24
+ 34c:	99 1f       	adc	r25, r25
+ 34e:	6a 95       	dec	r22
+ 350:	e2 f7       	brpl	.-8      	; 0x34a <DIO_SetPin_Value+0xe2>
+ 352:	82 2b       	or	r24, r18
+ 354:	82 bb       	out	0x12, r24	; 18
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 356:	81 e0       	ldi	r24, 0x01	; 1
+			case DIO_PORTC:
+			SET_BIT(PORTC, pin);
+			break;
+			case DIO_PORTD:
+			SET_BIT(PORTD, pin);
+			break;
+ 358:	08 95       	ret
+	return state_error;
+}
+
+ERROR_STATE DIO_SetPin_Value(DIO_Port port, DIO_Pin pin, DIO_Status status)
+{
+ERROR_STATE state_error = SUCCESS;
+ 35a:	81 e0       	ldi	r24, 0x01	; 1
+ 35c:	08 95       	ret
+			break;
+			case DIO_PORTD:
+			CLR_BIT(PORTD, pin);
+			break;
+			default:
+			state_error = FAIL;
+ 35e:	80 e0       	ldi	r24, 0x00	; 0
+ 360:	08 95       	ret
+			break;
+			case DIO_PORTD:
+			SET_BIT(PORTD, pin);
+			break;
+			default:
+			state_error = FAIL;
+ 362:	80 e0       	ldi	r24, 0x00	; 0
+			break;
+		}
+		break;
+	}
+	return state_error;
+}
+ 364:	08 95       	ret
+
+Disassembly of section .text.__dummy_fini:
+
+00000898 <_fini>:
+ 898:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+0000089a <__funcs_on_exit>:
+ 89a:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+0000089c <__simulator_exit>:
+ 89c:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+000007f0 <exit>:
+ 7f0:	ec 01       	movw	r28, r24
+ 7f2:	0e 94 4d 04 	call	0x89a	; 0x89a <__funcs_on_exit>
+ 7f6:	0e 94 4c 04 	call	0x898	; 0x898 <_fini>
+ 7fa:	ce 01       	movw	r24, r28
+ 7fc:	0e 94 4e 04 	call	0x89c	; 0x89c <__simulator_exit>
+ 800:	ce 01       	movw	r24, r28
+ 802:	0e 94 4a 04 	call	0x894	; 0x894 <_Exit>
+
+Disassembly of section .text._Exit:
+
+00000894 <_Exit>:
+ 894:	0e 94 5e 00 	call	0xbc	; 0xbc <_exit>
